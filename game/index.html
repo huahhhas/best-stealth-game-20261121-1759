@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DOCKLIGHT — a stealth game in three nights</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #07090c;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+  #wrap {
+    text-align: center;
+  }
+  canvas {
+    display: block;
+    width: 1280px;
+    height: 720px;
+    max-width: 100vw;
+    max-height: 100vh;
+    background: #0c0f13;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+  }
+  #note {
+    color: #5c6a76;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="note">DOCKLIGHT — grab 3 intel crates, then reach the boat unseen. WASD move · SHIFT sneak · E grab · R restart · ESC menu</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
